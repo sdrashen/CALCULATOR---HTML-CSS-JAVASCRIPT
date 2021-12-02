@@ -5,7 +5,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+}
+
+#main {
+    display: inline-block;
+    background-color: rgb(159, 216, 243);
+    padding: 15px;
+    border-radius: 3%;
+    box-shadow: 25px 10px 5px 0 rgb(57, 66, 66);
+}
+
+p {
+    margin-left: 10px;
 }
 
 input {
@@ -17,23 +28,16 @@ input {
     border-radius: 25%;
 }
 
-#main {
-    display: inline-block;
-    background-color: rgb(159, 216, 243);
-    padding: 10px;
-    border-radius: 3%;
-}
-
-#main h1 {
-    color: #fff;
-    background-color: rgb(105, 186, 240);
-    border-radius: 2px;
-    font-family: monospace;
-}
-
 .num {
     width: 64px;
     height: 67px;
+}
+
+
+/*outline property is inclusive*/
+
+.num:hover {
+    outline: 2px solid #fff;
 }
 
 .text {
@@ -47,6 +51,7 @@ input {
 
 #display {
     background-color: silver;
+    margin-bottom: 5px;
 }
 
 .text1 {
@@ -61,6 +66,10 @@ input {
 
 #cButton {
     background-color: rgb(235, 91, 66);
+}
+
+#cButton:hover {
+    outline: 2px solid #fff;
 }
 
 .maincolor {
